@@ -1,0 +1,28 @@
+{
+  "donors": [
+    {
+      "name": "Rahul Sharma",
+      "blood_group": "O+",
+      "age": 25,
+      "phone": "9876543210",
+      "city": "Mumbai"
+    },
+    {
+      "name": "Ayesha Khan",
+      "blood_group": "A+",
+      "age": 22,
+      "phone": "9123456789",
+      "city": "Pune"
+    }
+  ],
+  "requests": [
+    {
+      "patient_name": "Amit Verma",
+      "blood_group": "O+",
+      "units": 2,
+      "hospital": "City Hospital",
+      "city": "Mumbai",
+      "status": "pending"
+    }
+  ]
+}

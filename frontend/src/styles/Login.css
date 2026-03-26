@@ -1,0 +1,200 @@
+/* =====================
+   LOGIN PAGE
+===================== */
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/Login.jpeg");
+  background-size: cover;
+  background-position: center;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+
+/* Curve background */
+.login-curve {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 360px;
+  background: linear-gradient(180deg, #ffb3b3, #ffd9d9);
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+  z-index: 0;
+}
+
+/* =====================
+   LOGIN CARD
+===================== */
+
+.login-card {
+  position: relative;
+  z-index: 2;
+  width: 460px;
+  max-width: 92%;
+  background: white;
+  padding: 45px 40px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* =====================
+   HEADER
+===================== */
+
+.login-header {
+  text-align: center;
+}
+
+.login-header h1 {
+  font-size: 28px;
+  color: #d90429;
+}
+
+.login-header p {
+  font-size: 14px;
+  color: #444;
+  margin-top: -4px;
+}
+
+/* =====================
+   ROLE TABS
+===================== */
+
+.login-tabs {
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+}
+
+.login-tabs button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: #f9fafb;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.login-tabs button.active {
+  background: #dc2626;
+  color: white;
+}
+
+/* =====================
+   INPUTS (FLOATING)
+===================== */
+
+.input-group {
+  position: relative;
+  margin-top: 18px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  outline: none;
+}
+
+.input-group label {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+  background: white;
+  padding: 0 6px;
+  color: #888;
+  font-size: 13px;
+  pointer-events: none;
+  transition: 0.2s;
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label {
+  top: -7px;
+  font-size: 11px;
+  color: #dc2626;
+}
+
+/* Show / Hide password */
+.show-hide {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+  color: #dc2626;
+  cursor: pointer;
+}
+
+/* =====================
+   BUTTONS
+===================== */
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.login-btn {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 10px 0;
+  width: 130px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background: #b91c1c;
+}
+
+.reset-btn {
+  background: #fff;
+  border: 1px solid #dc2626;
+  color: #dc2626;
+  padding: 10px 0;
+  width: 130px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.reset-btn:hover {
+  background: #fee2e2;
+}
+
+/* =====================
+   DEMO TEXT
+===================== */
+
+.demo-credentials {
+  font-size: 12px;
+  color: #6b7280;
+  text-align: center;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+
+@media (max-width: 480px) {
+  .login-card {
+    padding: 30px 22px;
+  }
+}

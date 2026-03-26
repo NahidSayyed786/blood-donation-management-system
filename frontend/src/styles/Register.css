@@ -1,0 +1,166 @@
+/* ===== REGISTER PAGE WRAPPER ===== */
+.register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  min-height: 90vh;
+  background: #fafafa;
+}
+
+.split {
+  gap: 40px;
+}
+
+/* ===== LEFT IMAGE ===== */
+.left-illustration {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.left-illustration img {
+  width: 420px;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+/* ===== REGISTER CARD ===== */
+.register-card {
+  flex: 1;
+  background: #ffffff;
+  padding: 35px;
+  max-width: 480px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.register-card h2 {
+  color: #d90429;
+  font-size: 26px;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  color: #555;
+  margin-bottom: 25px;
+}
+
+/* ===== FORM ===== */
+.form {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 18px;
+}
+
+.row input,
+.row select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+}
+
+/* ===== PHOTO UPLOAD ===== */
+.photo-upload {
+  margin-bottom: 18px;
+}
+
+.photo-upload label {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.photo-preview {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 10px;
+  object-fit: cover;
+  border: 2px solid #eee;
+}
+
+/* ===== ACTION BUTTONS ===== */
+.actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.btn.primary {
+  background: #d90429;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn.primary:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.btn.outline {
+  background: #fff;
+  border: 2px solid #d90429;
+  color: #d90429;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* ===== MESSAGE ===== */
+.form-message {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+/* ===== TIPS ===== */
+.tips {
+  margin-top: 25px;
+  background: #fff5f5;
+  padding: 15px;
+  border-left: 4px solid #d90429;
+  border-radius: 8px;
+}
+
+.tips h4 {
+  margin-bottom: 8px;
+}
+
+.tips ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .register {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .left-illustration img {
+    width: 280px;
+  }
+
+  .register-card {
+    width: 100%;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,104 @@
+/* ================= NAVBAR ================= */
+.navbar {
+  background-color: #D90429;
+  padding: 15px 30px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 12px rgb(248, 247, 247);
+  margin-bottom: 50px;
+}
+
+/* Brand */
+.brand {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+
+/* Links */
+.nav-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.navbar a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* ================= USER DROPDOWN ================= */
+.user-dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.user-name {
+  color: white;
+  font-weight: 600;
+}
+
+/* DROPDOWN MENU (SINGLE SOURCE OF TRUTH ✅) */
+.dropdown-menu {
+  position: absolute;
+  top: 34px;
+  right: 0;
+  background: white;
+  color: black;
+  padding: 10px 12px;
+  border-radius: 6px;
+  min-width: 140px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+  display: none;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.user-dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Dropdown items */
+.dropdown-menu a,
+.dropdown-menu button {
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 6px 0;
+  text-align: left;
+  cursor: pointer;
+  color: black;
+  font-weight: 500;
+}
+
+.dropdown-menu a:hover,
+.dropdown-menu button:hover {
+  color: #D90429;
+}
+
+/* ================= ADMIN LOGOUT ================= */
+.logout-btn {
+  background: white;
+  color: #D90429;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  opacity: 0.9;
+}
