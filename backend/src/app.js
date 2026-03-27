@@ -18,15 +18,15 @@ app.use(cors());
 app.use(express.json());
 
 /* ✅ ADD ROUTES FIRST */
-app.get("/", (req, res) => {
-  res.send("Backend is running 🚀");
-});
-
 app.get("/api/health", (req, res) => {
   res.json({
     status: "OK",
     message: "Blood Donation Backend is running 🚀",
   });
+});
+
+app.get("/", (req, res) => {
+  res.send("Backend is running 🚀");
 });
 
 /* API ROUTES */
